@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEJ Holding LLC | Gold Bullion Corporate Offer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #d4af37;
+            --accent-color: #2d5aa0;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --success-color: #28a745;
+            --border-radius: 8px;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f5f7fa;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 1.2rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            color: var(--accent-color);
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-alt {
+            background-color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #c19b2e;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.2);
+            color: var(--primary-color) !important;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--secondary-color);
+            color: var(--primary-color) !important;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-highlight {
+            color: var(--secondary-color);
+        }
+
+        .mb-4 {
+            margin-bottom: 2rem;
+        }
+
+        /* Language Selector */
+        .language-selector {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .lang-btn {
+            background: none;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            margin: 0 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+            font-weight: 500;
+            min-width: 40px;
+        }
+
+        .lang-btn:hover {
+            background-color: rgba(26, 54, 93, 0.1);
+        }
+
+        .lang-btn.active {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border-color: var(--secondary-color);
+        }
+
+        /* Language-specific content */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-right: 12px;
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.95)), url('https://images.unsplash.com/photo-1580637250481-b78db3e6f84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 100px;
+            margin-top: 80px;
+        }
+
+        .hero h1, .hero p {
+            color: white;
+        }
+
+        .hero h2 {
+            color: white !important;
+        }
+
+        .hero h2:after {
+            background-color: white;
+            left: 0;
+            transform: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 2rem;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .badge i {
+            margin-right: 8px;
+            color: var(--secondary-color);
+        }
+
+        /* Terms Section */
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .term-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            height: 100%;
+            border-top: 4px solid transparent;
+        }
+
+        .term-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .term-card.primary {
+            border-top-color: var(--primary-color);
+        }
+
+        .term-card.secondary {
+            border-top-color: var(--secondary-color);
+        }
+
+        .term-card.accent {
+            border-top-color: var(--accent-color);
+        }
+
+        .term-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .term-list {
+            list-style-type: none;
+            margin-top: 1.5rem;
+        }
+
+        .term-list li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .term-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Collateral Section */
+        .collateral-box {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 3rem;
+            border-left: 6px solid var(--secondary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .collateral-box:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--primary-color);
+            opacity: 0.05;
+            border-radius: 50%;
+            transform: translate(50px, -50px);
+        }
+
+        .collateral-box:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: var(--secondary-color);
+            opacity: 0.05;
+            border-radius: 50%;
+            transform: translate(-50px, 50px);
+        }
+
+        .collateral-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .collateral-alert {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .collateral-alert h4 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .collateral-alert i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        /* Process Section */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .process-steps:before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background-color: var(--secondary-color);
+            z-index: 0;
+        }
+
+        .step {
+            background-color: white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 40px 60px;
+            position: relative;
+            z-index: 1;
+            box-shadow: var(--box-shadow);
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .step-content {
+            text-align: center;
+            max-width: 200px;
+            margin-top: 1rem;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d5aa0 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-section h2, .cta-section p {
+            color: white;
+        }
+
+        .cta-section h2:after {
+            background-color: white;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: white;
+            border-radius: var(--border-radius);
+            width: 100%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-header {
+            padding: 25px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        .modal-header h3 {
+            color: white;
+            margin: 0;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        /* Notificação */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            border-radius: var(--border-radius);
+            color: white;
+            font-weight: 500;
+            z-index: 3000;
+            box-shadow: var(--box-shadow);
+            opacity: 0;
+            transform: translateX(100px);
+            transition: all 0.3s ease;
+            max-width: 400px;
+        }
+        
+        .notification.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .notification.success {
+            background-color: var(--success-color);
+            border-left: 4px solid #1e7e34;
+        }
+        
+        .notification.error {
+            background-color: #dc3545;
+            border-left: 4px solid #a71d2a;
+        }
+        
+        .notification.info {
+            background-color: var(--accent-color);
+            border-left: 4px solid #1a4a8f;
+        }
+        
+        .form-status {
+            text-align: center;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin: 15px 0;
+            display: none;
+        }
+        
+        .form-status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+        
+        .form-status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
+        /* Honeypot field - invisible to humans */
+        .honeypot-field {
+            display: none !important;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            position: absolute;
+            left: -9999px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .process-steps:before {
+                display: none;
+            }
+            
+            .step-item {
+                margin-bottom: 40px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                opacity: 0;
+                transition: all 0.4s ease;
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .mobile-toggle {
+                display: block;
+                z-index: 1001;
+            }
+            
+            .language-selector {
+                margin-left: 0;
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .modal-content {
+                max-width: 95%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 50px 0;
+            }
+            
+            .collateral-box {
+                padding: 25px;
+            }
+            
+            .term-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="logo-text">TEJ HOLDING LLC</div>
+            </div>
+            
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#terms" class="nav-link">Termos</a></li>
+                <li><a href="#collateral" class="nav-link">Garantia</a></li>
+                <li><a href="#process" class="nav-link">Processo</a></li>
+                <li>
+                    <div class="language-selector">
+                        <button class="lang-btn active" data-lang="pt">PT</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </li>
+                <li><a href="#contact" class="btn btn-outline nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Portuguese Content -->
+                <div class="lang-content pt active">
+                    <h1>Oferta Corporativa de <span class="text-highlight">Ouro Físico</span></h1>
+                    <h2>Transações Internacionais com Garantia Jurídica</h2>
+                    <p class="mb-4">A TEJ HOLDING LLC apresenta estrutura profissional para negociação internacional de ouro físico (Gold Dore) com pureza mínima de 95%+, origem legalmente comprovada e entrega CIF Dubai/UAE.</p>
+                    
+                    <div class="hero-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Estrutura Jurídica Segura</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-globe"></i>
+                            <span>Conformidade Internacional</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Mecanismo de Garantia Física</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- English Content -->
+                <div class="lang-content en">
+                    <h1>Corporate <span class="text-highlight">Physical Gold</span> Offer</h1>
+                    <h2>International Transactions with Legal Guarantee</h2>
+                    <p class="mb-4">TEJ HOLDING LLC presents a professional structure for international trading of physical gold (Gold Dore) with minimum 95%+ purity, legally proven origin and CIF Dubai/UAE delivery.</p>
+                    
+                    <div class="hero-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Legal Structure</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-globe"></i>
+                            <span>International Compliance</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Physical Collateral Mechanism</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section class="section" id="terms">
+        <div class="container">
+            <div class="text-center mb-4">
+                <!-- Portuguese -->
+                <div class="lang-content pt active">
+                    <h2>Termos da Oferta Corporativa</h2>
+                    <p>Estrutura técnica e comercial para transações internacionais de ouro físico</p>
+                </div>
+                
+                <!-- English -->
+                <div class="lang-content en">
+                    <h2>Corporate Offer Terms</h2>
+                    <p>Technical and commercial structure for international physical gold transactions</p>
+                </div>
+            </div>
+            
+            <div class="terms-grid">
+                <!-- Card 1 -->
+                <div class="term-card primary">
+                    <div class="term-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    
+                    <!-- Portuguese -->
+                    <div class="lang-content pt active">
+                        <h3>Estrutura da Transação</h3>
+                        <p>Modelo comercial com preço único, final e fechado, já incluindo todos os custos operacionais.</p>
+                        <ul class="term-list">
+                            <li>Preço referenciado ao mercado internacional</li>
+                            <li>Pagamento via TT ou USDT (conforme SPA)</li>
+                            <li>Sem comissões explícitas na estrutura TEJ</li>
+                            <li>Volume: lote técnico de referência (100 kg)</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English -->
+                    <div class="lang-content en">
+                        <h3>Transaction Structure</h3>
+                        <p>Commercial model with single, final and closed price, already including all operational costs.</p>
+                        <ul class="term-list">
+                            <li>Price referenced to international market</li>
+                            <li>Payment via TT or USDT (as per SPA)</li>
+                            <li>No explicit commissions in TEJ structure</li>
+                            <li>Volume: technical reference lot (100 kg)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="term-card secondary">
+                    <div class="term-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    
+                    <!-- Portuguese -->
+                    <div class="lang-content pt active">
+                        <h3>Condições-Chave</h3>
+                        <p>Distribuição clara de responsabilidades entre as partes contratantes.</p>
+                        <ul class="term-list">
+                            <li><strong>Comprador:</strong> Impostos, taxas e royalties</li>
+                            <li><strong>Comprador:</strong> Custódia da garantia (collateral)</li>
+                            <li><strong>Vendedor:</strong> Documentação legal e regulatória</li>
+                            <li><strong>Vendedor:</strong> Transporte internacional</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English -->
+                    <div class="lang-content en">
+                        <h3>Key Conditions</h3>
+                        <p>Clear distribution of responsibilities between contracting parties.</p>
+                        <ul class="term-list">
+                            <li><strong>Buyer:</strong> Taxes, fees and royalties</li>
+                            <li><strong>Buyer:</strong> Collateral custody</li>
+                            <li><strong>Seller:</strong> Legal and regulatory documentation</li>
+                            <li><strong>Seller:</strong> International transport</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="term-card accent">
+                    <div class="term-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    
+                    <!-- Portuguese -->
+                    <div class="lang-content pt active">
+                        <h3>Mitigação de Risco</h3>
+                        <p>Mecanismos de proteção para ambas as partes na transação.</p>
+                        <ul class="term-list">
+                            <li>Sem custos antecipados desprotegidos</li>
+                            <li>Garantia física proporcional aos valores</li>
+                            <li>Conformidade com leis de origem e UAE</li>
+                            <li>Documentação integral e auditável</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English -->
+                    <div class="lang-content en">
+                        <h3>Risk Mitigation</h3>
+                        <p>Protection mechanisms for both parties in the transaction.</p>
+                        <ul class="term-list">
+                            <li>No unprotected upfront costs</li>
+                            <li>Physical collateral proportional to values</li>
+                            <li>Compliance with origin and UAE laws</li>
+                            <li>Complete and auditable documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collateral Section -->
+    <section class="section section-alt" id="collateral">
+        <div class="container">
+            <div class="text-center mb-4">
+                <!-- Portuguese -->
+                <div class="lang-content pt active">
+                    <h2>Nota Técnica sobre a Garantia (Collateral)</h2>
+                    <p>Mecanismo de segurança jurídica e financeira para transações de ouro físico</p>
+                </div>
+                
+                <!-- English -->
+                <div class="lang-content en">
+                    <h2>Technical Note on Collateral</h2>
+                    <p>Legal and financial security mechanism for physical gold transactions</p>
+                </div>
+            </div>
+            
+            <div class="collateral-box">
+                <div class="collateral-content">
+                    <!-- Portuguese Alert -->
+                    <div class="collateral-alert lang-content pt active">
+                        <h4><i class="fas fa-exclamation-triangle"></i> SEÇÃO DE ALTA RELEVÂNCIA JURÍDICA E DE RISCO</h4>
+                        <p>A estrutura de garantia (collateral) é componente crítico para segurança contratual em transações internacionais de commodities.</p>
+                    </div>
+                    
+                    <!-- English Alert -->
+                    <div class="collateral-alert lang-content en">
+                        <h4><i class="fas fa-exclamation-triangle"></i> HIGH LEGAL AND RISK RELEVANCE SECTION</h4>
+                        <p>The collateral structure is a critical component for contractual security in international commodity transactions.</p>
+                    </div>
+                    
+                    <!-- Portuguese Content -->
+                    <div class="lang-content pt active">
+                        <h3>Definição e Função da Garantia</h3>
+                        <p>A Garantia consiste em quantidade pré-acordada de ouro físico, fornecida pelo Vendedor ao Comprador como instrumento de segurança para viabilizar pagamentos antecipados destinados exclusivamente a preparação documental, legalização, exportação e entrega.</p>
+                        
+                        <h3 class="mt-4">Características Técnicas</h3>
+                        <ul class="term-list">
+                            <li><strong>Proporção padrão:</strong> ≈10% do volume contratual (ex.: 10 kg para contrato de 100 kg)</li>
+                            <li><strong>Compensação automática:</strong> Deduzida integralmente no pagamento final após entrega</li>
+                            <li><strong>Custódia exclusiva:</strong> Direito do Comprador definir local e estrutura de armazenamento</li>
+                            <li><strong>Segregação documental:</strong> Certificados independentes comprovam existência física</li>
+                        </ul>
+                        
+                        <h3 class="mt-4">CMA - Collateral Management Agreement</h3>
+                        <p>Instrumento jurídico complementar que define com precisão:</p>
+                        <ul class="term-list">
+                            <li>Prazos máximos de entrega</li>
+                            <li>Condições objetivas de inadimplência</li>
+                            <li>Procedimentos de execução da garantia</li>
+                            <li>Mecanismos de compensação automática</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- English Content -->
+                    <div class="lang-content en">
+                        <h3>Definition and Function of Collateral</h3>
+                        <p>Collateral consists of a pre-agreed quantity of physical gold, provided by the Seller to the Buyer as a security instrument to enable advance payments exclusively for documentation preparation, legalization, export and delivery.</p>
+                        
+                        <h3 class="mt-4">Technical Characteristics</h3>
+                        <ul class="term-list">
+                            <li><strong>Standard proportion:</strong> ≈10% of contractual volume (e.g., 10 kg for 100 kg contract)</li>
+                            <li><strong>Automatic compensation:</strong> Fully deducted in final payment after delivery</li>
+                            <li><strong>Exclusive custody:</strong> Buyer's right to define storage location and structure</li>
+                            <li><strong>Documentary segregation:</strong> Independent certificates prove physical existence</li>
+                        </ul>
+                        
+                        <h3 class="mt-4">CMA - Collateral Management Agreement</h3>
+                        <p>Complementary legal instrument that precisely defines:</p>
+                        <ul class="term-list">
+                            <li>Maximum delivery deadlines</li>
+                            <li>Objective default conditions</li>
+                            <li>Collateral execution procedures</li>
+                            <li>Automatic compensation mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="text-center mb-4">
+                <!-- Portuguese -->
+                <div class="lang-content pt active">
+                    <h2>Processo Operacional</h2>
+                    <p>Fluxo estruturado para execução segura da transação</p>
+                </div>
+                
+                <!-- English -->
+                <div class="lang-content en">
+                    <h2>Operational Process</h2>
+                    <p>Structured flow for secure transaction execution</p>
+                </div>
+            </div>
+            
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="step-item">
+                    <div class="step">1</div>
+                    <div class="step-content">
+                        <!-- Portuguese -->
+                        <div class="lang-content pt active">
+                            <h4>SPA + KYC</h4>
+                            <p>Emissão e assinatura do Sales & Purchase Agreement com due diligence</p>
+                        </div>
+                        
+                        <!-- English -->
+                        <div class="lang-content en">
+                            <h4>SPA + KYC</h4>
+                            <p>Issuance and signing of Sales & Purchase Agreement with due diligence</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-item">
+                    <div class="step">2</div>
+                    <div class="step-content">
+                        <!-- Portuguese -->
+                        <div class="lang-content pt active">
+                            <h4>Preparação Legal</h4>
+                            <p>Documentação no país de origem (até 10 dias úteis)</p>
+                        </div>
+                        
+                        <!-- English -->
+                        <div class="lang-content en">
+                            <h4>Legal Preparation</h4>
+                            <p>Documentation in country of origin (up to 10 business days)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-item">
+                    <div class="step">3</div>
+                    <div class="step-content">
+                        <!-- Portuguese -->
+                        <div class="lang-content pt active">
+                            <h4>Transporte</h4>
+                            <p>Logística aérea internacional com seguro total</p>
+                        </div>
+                        
+                        <!-- English -->
+                        <div class="lang-content en">
+                            <h4>Transport</h4>
+                            <p>International air logistics with full insurance</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step-item">
+                    <div class="step">4</div>
+                    <div class="step-content">
+                        <!-- Portuguese -->
+                        <div class="lang-content pt active">
+                            <h4>Testes</h4>
+                            <p>Análise em laboratório independente (assay)</p>
+                        </div>
+                        
+                        <!-- English -->
+                        <div class="lang-content en">
+                            <h4>Testing</h4>
+                            <p>Analysis in independent laboratory (assay)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="step-item">
+                    <div class="step">5</div>
+                    <div class="step-content">
+                        <!-- Portuguese -->
+                        <div class="lang-content pt active">
+                            <h4>Liquidação</h4>
+                            <p>Liberação de fundos após aprovação final</p>
+                        </div>
+                        
+                        <!-- English -->
+                        <div class="lang-content en">
+                            <h4>Settlement</h4>
+                            <p>Release of funds after final approval</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <!-- Portuguese -->
+            <div class="lang-content pt active">
+                <h2>Interessado em Estruturar uma Transação?</h2>
+                <p>Entre em contato com nossa equipe corporativa para discussão confidencial e apresentação detalhada.</p>
+            </div>
+            
+            <!-- English -->
+            <div class="lang-content en">
+                <h2>Interested in Structuring a Transaction?</h2>
+                <p>Contact our corporate team for confidential discussion and detailed presentation.</p>
+            </div>
+            
+            <div class="cta-buttons">
+                <!-- Portuguese Button -->
+                <div class="lang-content pt active">
+                    <a href="#" class="btn open-modal-btn" style="background-color: white; color: var(--primary-color);">
+                        <i class="fas fa-envelope"></i> Solicitar Reunião
+                    </a>
+                </div>
+                
+                <!-- English Button -->
+                <div class="lang-content en">
+                    <a href="#" class="btn open-modal-btn" style="background-color: white; color: var(--primary-color);">
+                        <i class="fas fa-envelope"></i> Request Meeting
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <!-- Portuguese -->
+                    <div class="lang-content pt active">
+                        <div class="footer-logo">TEJ HOLDING LLC</div>
+                        <p>Estruturação profissional de transações internacionais de commodities com foco em segurança jurídica, conformidade regulatória e mitigação de risco.</p>
+                    </div>
+                    
+                    <!-- English -->
+                    <div class="lang-content en">
+                        <div class="footer-logo">TEJ HOLDING LLC</div>
+                        <p>Professional structuring of international commodity transactions with focus on legal security, regulatory compliance and risk mitigation.</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#home">Início / Home</a></li>
+                        <li><a href="#terms">Termos / Terms</a></li>
+                        <li><a href="#collateral">Garantia / Collateral</a></li>
+                        <li><a href="#process">Processo / Process</a></li>
+                        <li><a href="#contact">Contato / Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="lang-content pt active">Contato Corporativo</h4>
+                    <h4 class="lang-content en">Corporate Contact</h4>
+                    <a href="#contact" class="fixed-contact-btn lang-content pt active">
+                     Contato
+                    </a>
+                    <a href="#contact" class="fixed-contact-btn lang-content en">
+                     Contact
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <!-- Portuguese -->
+                <div class="lang-content pt active">
+                    <p>&copy; 2025 TEJ HOLDING LLC. Todos os direitos reservados. | Documento confidencial para uso exclusivo das partes interessadas.</p>
+                    <p>Esta oferta não constitui solicitação de investimento e está sujeita a due diligence completa e assinatura de contratos vinculativos.</p>
+                </div>
+                
+                <!-- English -->
+                <div class="lang-content en">
+                    <p>&copy; 2025 TEJ HOLDING LLC. All rights reserved. | Confidential document for exclusive use of interested parties.</p>
+                    <p>This offer does not constitute an investment solicitation and is subject to complete due diligence and signing of binding contracts.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="meetingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="lang-content pt active">Solicitar Reunião</h3>
+                <h3 class="lang-content en">Request Meeting</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulário em Português (Web3Forms) -->
+                <form id="meetingFormPt" class="lang-content pt active meeting-form" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-status" id="formStatusPt"></div>
+                    
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="b9629402-36df-4360-92e1-c38cfb30df80">
+                    
+                    <!-- Additional form fields for Web3Forms -->
+                    <input type="hidden" name="subject" value="Nova Solicitação de Reunião - TEJ HOLDING LLC">
+                    <input type="hidden" name="from_name" value="TEJ HOLDING LLC Website">
+                    <input type="hidden" name="language" value="Portuguese">
+                    <input type="checkbox" name="botcheck" class="honeypot-field">
+                    
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="honeypot" class="honeypot-field">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Empresa / Organização *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="position">Cargo / Função</label>
+                            <input type="text" id="position" name="position">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">País de Origem *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Selecione...</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="EUA">Estados Unidos</option>
+                                <option value="UK">Reino Unido</option>
+                                <option value="UAE">Emirados Árabes Unidos</option>
+                                <option value="Suíça">Suíça</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interest">Interesse em Volume Aproximado (kg)</label>
+                        <select id="interest" name="interest">
+                            <option value="">Selecione...</option>
+                            <option value="10-50">10 - 50 kg</option>
+                            <option value="50-100">50 - 100 kg</option>
+                            <option value="100-500">100 - 500 kg</option>
+                            <option value="500+">500+ kg</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem Adicional</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Informações relevantes sobre sua empresa ou interesse específico..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn submit-btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Solicitação
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Formulário em Inglês (Web3Forms) -->
+                <form id="meetingFormEn" class="lang-content en meeting-form" action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-status" id="formStatusEn"></div>
+                    
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="b9629402-36df-4360-92e1-c38cfb30df80">
+                    
+                    <!-- Additional form fields for Web3Forms -->
+                    <input type="hidden" name="subject" value="New Meeting Request - TEJ HOLDING LLC">
+                    <input type="hidden" name="from_name" value="TEJ HOLDING LLC Website">
+                    <input type="hidden" name="language" value="English">
+                    <input type="checkbox" name="botcheck" class="honeypot-field">
+                    
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="honeypot" class="honeypot-field">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nameEn">Full Name *</label>
+                            <input type="text" id="nameEn" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="companyEn">Company / Organization *</label>
+                            <input type="text" id="companyEn" name="company" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emailEn">Corporate Email *</label>
+                            <input type="email" id="emailEn" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneEn">Phone / WhatsApp *</label>
+                            <input type="tel" id="phoneEn" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="positionEn">Position / Role</label>
+                            <input type="text" id="positionEn" name="position">
+                        </div>
+                        <div class="form-group">
+                            <label for="countryEn">Country of Origin *</label>
+                            <select id="countryEn" name="country" required>
+                                <option value="">Select...</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="USA">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="UAE">United Arab Emirates</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interestEn">Interest in Approximate Volume (kg)</label>
+                        <select id="interestEn" name="interest">
+                            <option value="">Select...</option>
+                            <option value="10-50">10 - 50 kg</option>
+                            <option value="50-100">50 - 100 kg</option>
+                            <option value="100-500">100 - 500 kg</option>
+                            <option value="500+">500+ kg</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="messageEn">Additional Message</label>
+                        <textarea id="messageEn" name="message" rows="4" placeholder="Relevant information about your company or specific interest..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificação -->
+    <div id="notification" class="notification"></div>
+
+    <script>
+        // ==============================
+        // CONFIGURAÇÃO DO WEB3FORMS
+        // ==============================
+        const WEB3FORMS_CONFIG = {
+            ENDPOINT: 'https://api.web3forms.com/submit',
+            ACCESS_KEY: 'b9629402-36df-4360-92e1-c38cfb30df80'
+        };
+
+        // ==============================
+        // VARIÁVEIS GLOBAIS
+        // ==============================
+        let currentLang = localStorage.getItem('preferredLang') || 'pt';
+
+        // ==============================
+        // FUNÇÕES DE NOTIFICAÇÃO
+        // ==============================
+        function showNotification(message, type = 'info', duration = 5000) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.className = `notification ${type} show`;
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, duration);
+        }
+
+        // ==============================
+        // FUNÇÕES DE IDIOMA
+        // ==============================
+        function initializeLanguageSystem() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const ptContents = document.querySelectorAll('.lang-content.pt');
+            const enContents = document.querySelectorAll('.lang-content.en');
+            
+            function setLanguage(lang) {
+                currentLang = lang;
+                localStorage.setItem('preferredLang', lang);
+                
+                // Atualizar botões de idioma
+                langButtons.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.lang === lang);
+                });
+                
+                // Atualizar conteúdo
+                if (lang === 'pt') {
+                    ptContents.forEach(content => {
+                        if (content.classList.contains('meeting-form')) {
+                            content.style.display = 'block';
+                        } else {
+                            content.classList.add('active');
+                        }
+                    });
+                    enContents.forEach(content => {
+                        if (content.classList.contains('meeting-form')) {
+                            content.style.display = 'none';
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                } else {
+                    ptContents.forEach(content => {
+                        if (content.classList.contains('meeting-form')) {
+                            content.style.display = 'none';
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                    enContents.forEach(content => {
+                        if (content.classList.contains('meeting-form')) {
+                            content.style.display = 'block';
+                        } else {
+                            content.classList.add('active');
+                        }
+                    });
+                }
+                
+                updateNavText(lang);
+            }
+            
+            function updateNavText(lang) {
+                const navLinks = document.querySelectorAll('.nav-link');
+                if (lang === 'pt') {
+                    if (navLinks[0]) navLinks[0].textContent = 'Início';
+                    if (navLinks[1]) navLinks[1].textContent = 'Termos';
+                    if (navLinks[2]) navLinks[2].textContent = 'Garantia';
+                    if (navLinks[3]) navLinks[3].textContent = 'Processo';
+                    if (navLinks[5]) navLinks[5].textContent = 'Contato';
+                } else {
+                    if (navLinks[0]) navLinks[0].textContent = 'Home';
+                    if (navLinks[1]) navLinks[1].textContent = 'Terms';
+                    if (navLinks[2]) navLinks[2].textContent = 'Collateral';
+                    if (navLinks[3]) navLinks[3].textContent = 'Process';
+                    if (navLinks[5]) navLinks[5].textContent = 'Contact';
+                }
+            }
+            
+            // Event listeners
+            langButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    setLanguage(button.dataset.lang);
+                });
+            });
+            
+            // Inicializar
+            setLanguage(currentLang);
+        }
+
+        // ==============================
+        // MENU MOBILE
+        // ==============================
+        function initializeMobileMenu() {
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileToggle) {
+                mobileToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    navLinks.classList.toggle('active');
+                    mobileToggle.innerHTML = navLinks.classList.contains('active') 
+                        ? '<i class="fas fa-times"></i>' 
+                        : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    if (mobileToggle) mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (navLinks && !navLinks.contains(e.target) && mobileToggle && !mobileToggle.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                    if (mobileToggle) mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        }
+
+        // ==============================
+        // NAVEGAÇÃO SUAVE
+        // ==============================
+        function initializeSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                if (anchor.classList.contains('open-modal-btn')) return;
+                
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // ==============================
+        // EFEITO NO HEADER AO SCROLL
+        // ==============================
+        function initializeHeaderScroll() {
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('header');
+                if (header) {
+                    header.style.boxShadow = window.scrollY > 50 
+                        ? '0 5px 15px rgba(0, 0, 0, 0.1)' 
+                        : '0 2px 10px rgba(0, 0, 0, 0.05)';
+                }
+            });
+        }
+
+        // ==============================
+        // MODAL FUNCTIONS
+        // ==============================
+        function initializeModal() {
+            const meetingModal = document.getElementById('meetingModal');
+            const modalClose = document.getElementById('modalClose');
+            const openModalButtons = document.querySelectorAll('.open-modal-btn');
+            
+            function openModal() {
+                meetingModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                // Limpar formulários ao abrir
+                clearForms();
+            }
+            
+            function closeModal() {
+                meetingModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            
+            function clearForms() {
+                document.querySelectorAll('.meeting-form').forEach(form => {
+                    form.reset();
+                    const statusDiv = form.querySelector('.form-status');
+                    if (statusDiv) {
+                        statusDiv.className = 'form-status';
+                        statusDiv.textContent = '';
+                    }
+                });
+            }
+            
+            // Event listeners para abrir modal
+            openModalButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal();
+                });
+            });
+            
+            // Event listener para fechar modal
+            if (modalClose) {
+                modalClose.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    closeModal();
+                });
+            }
+            
+            // Fechar modal ao clicar fora
+            if (meetingModal) {
+                meetingModal.addEventListener('click', (e) => {
+                    if (e.target === meetingModal) {
+                        closeModal();
+                    }
+                });
+            }
+            
+            // Fechar modal com ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && meetingModal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+            
+            return { openModal, closeModal, clearForms };
+        }
+
+        // ==============================
+        // ENVIO VIA WEB3FORMS
+        // ==============================
+        async function submitToWeb3Forms(formData, formLang) {
+            // Verificar honeypot (se preenchido, é spam)
+            if (formData.honeypot || formData.botcheck) {
+                return {
+                    success: false,
+                    message: formLang === 'pt' 
+                        ? 'Detectamos atividade suspeita. Tente novamente.' 
+                        : 'Suspicious activity detected. Please try again.'
+                };
+            }
+            
+            // Adicionar informações adicionais para Web3Forms
+            const dataToSend = {
+                access_key: WEB3FORMS_CONFIG.ACCESS_KEY,
+                name: formData.name,
+                company: formData.company,
+                email: formData.email,
+                phone: formData.phone,
+                position: formData.position || '',
+                country: formData.country,
+                interest: formData.interest || '',
+                message: formData.message || '',
+                subject: formLang === 'pt' 
+                    ? 'Nova Solicitação de Reunião - TEJ HOLDING LLC' 
+                    : 'New Meeting Request - TEJ HOLDING LLC',
+                from_name: 'TEJ HOLDING LLC Website',
+                language: formLang === 'pt' ? 'Portuguese' : 'English',
+                page_url: window.location.href,
+                botcheck: formData.botcheck || ''
+            };
+            
+            try {
+                const response = await fetch(WEB3FORMS_CONFIG.ENDPOINT, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(dataToSend)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok && result.success) {
+                    return {
+                        success: true,
+                        message: formLang === 'pt' 
+                            ? 'Solicitação enviada com sucesso!' 
+                            : 'Request sent successfully!'
+                    };
+                } else {
+                    return {
+                        success: false,
+                        message: result.message || (formLang === 'pt' 
+                            ? 'Erro ao enviar solicitação.' 
+                            : 'Error sending request.')
+                    };
+                }
+            } catch (error) {
+                console.error('Erro no envio para Web3Forms:', error);
+                return {
+                    success: false,
+                    message: formLang === 'pt' 
+                        ? 'Erro de conexão. Tente novamente em alguns instantes.' 
+                        : 'Connection error. Please try again in a moment.'
+                };
+            }
+        }
+
+        // ==============================
+        // FORMULÁRIOS
+        // ==============================
+        function initializeForms() {
+            const formPt = document.getElementById('meetingFormPt');
+            const formEn = document.getElementById('meetingFormEn');
+            const { closeModal } = initializeModal();
+            
+            function showFormStatus(form, message, type = 'success') {
+                const statusDiv = form.querySelector('.form-status');
+                if (statusDiv) {
+                    statusDiv.textContent = message;
+                    statusDiv.className = `form-status ${type}`;
+                    
+                    // Auto-remover após 5 segundos
+                    if (type === 'success') {
+                        setTimeout(() => {
+                            statusDiv.className = 'form-status';
+                            statusDiv.textContent = '';
+                        }, 5000);
+                    }
+                }
+            }
+            
+            async function handleFormSubmit(e, formLang) {
+                e.preventDefault();
+                
+                const form = e.target;
+                const submitButton = form.querySelector('.submit-btn');
+                const originalButtonText = submitButton.innerHTML;
+                
+                // Desativar botão durante o envio
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + 
+                    (formLang === 'pt' ? 'Enviando...' : 'Sending...');
+                submitButton.disabled = true;
+                
+                // Coletar dados do formulário
+                const formData = {
+                    name: form.querySelector('input[name="name"]').value.trim(),
+                    company: form.querySelector('input[name="company"]').value.trim(),
+                    email: form.querySelector('input[name="email"]').value.trim(),
+                    phone: form.querySelector('input[name="phone"]').value.trim(),
+                    position: form.querySelector('input[name="position"]')?.value.trim() || '',
+                    country: form.querySelector('select[name="country"]').value,
+                    interest: form.querySelector('select[name="interest"]')?.value || '',
+                    message: form.querySelector('textarea[name="message"]')?.value.trim() || '',
+                    // Honeypot fields
+                    honeypot: form.querySelector('input[name="honeypot"]')?.value || '',
+                    botcheck: form.querySelector('input[name="botcheck"]')?.checked || false
+                };
+                
+                // Validação básica
+                if (!formData.name || !formData.company || !formData.email || !formData.phone || !formData.country) {
+                    showFormStatus(form, 
+                        formLang === 'pt' 
+                            ? 'Por favor, preencha todos os campos obrigatórios (*).' 
+                            : 'Please fill in all required fields (*).',
+                        'error'
+                    );
+                    
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                    return;
+                }
+                
+                // Validar e-mail
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(formData.email)) {
+                    showFormStatus(form,
+                        formLang === 'pt' 
+                            ? 'Por favor, insira um endereço de e-mail válido.' 
+                            : 'Please enter a valid email address.',
+                        'error'
+                    );
+                    
+                    submitButton.innerHTML = originalButtonText;
+                    submitButton.disabled = false;
+                    return;
+                }
+                
+                try {
+                    // Enviar para Web3Forms
+                    const result = await submitToWeb3Forms(formData, formLang);
+                    
+                    if (result.success) {
+                        showFormStatus(form,
+                            formLang === 'pt' 
+                                ? '✅ Solicitação enviada com sucesso! Entraremos em contato em breve.' 
+                                : '✅ Request sent successfully! We will contact you soon.',
+                            'success'
+                        );
+                        
+                        showNotification(
+                            formLang === 'pt' 
+                                ? '✅ Solicitação enviada com sucesso!' 
+                                : '✅ Request sent successfully!',
+                            'success'
+                        );
+                        
+                        // Limpar formulário
+                        form.reset();
+                        
+                        // Fechar modal após 3 segundos
+                        setTimeout(() => {
+                            closeModal();
+                        }, 3000);
+                    } else {
+                        showFormStatus(form,
+                            formLang === 'pt' 
+                                ? '❌ ' + result.message 
+                                : '❌ ' + result.message,
+                            'error'
+                        );
+                        
+                        showNotification(
+                            formLang === 'pt' 
+                                ? '❌ ' + result.message 
+                                : '❌ ' + result.message,
+                            'error'
+                        );
+                    }
+                } catch (error) {
+                    console.error('Erro no envio:', error);
+                    showFormStatus(form,
+                        formLang === 'pt' 
+                            ? '❌ Erro inesperado. Tente novamente.' 
+                            : '❌ Unexpected error. Please try again.',
+                        'error'
+                    );
+                    
+                    showNotification(
+                        formLang === 'pt' 
+                            ? 'Erro no envio. Tente novamente.' 
+                            : 'Sending error. Try again.',
+                        'error'
+                    );
+                } finally {
+                    // Restaurar botão após 2 segundos
+                    setTimeout(() => {
+                        submitButton.innerHTML = originalButtonText;
+                        submitButton.disabled = false;
+                    }, 2000);
+                }
+            }
+            
+            // Adicionar event listeners aos formulários
+            if (formPt) {
+                formPt.addEventListener('submit', (e) => handleFormSubmit(e, 'pt'));
+            }
+            
+            if (formEn) {
+                formEn.addEventListener('submit', (e) => handleFormSubmit(e, 'en'));
+            }
+            
+            // Adicionar validação em tempo real para melhor UX
+            function setupRealTimeValidation() {
+                const inputs = document.querySelectorAll('.meeting-form input, .meeting-form select, .meeting-form textarea');
+                
+                inputs.forEach(input => {
+                    input.addEventListener('blur', function() {
+                        if (this.hasAttribute('required') && !this.value.trim()) {
+                            this.style.borderColor = '#dc3545';
+                        } else {
+                            this.style.borderColor = '#ddd';
+                        }
+                    });
+                    
+                    // Validação especial para e-mail
+                    if (input.type === 'email') {
+                        input.addEventListener('input', function() {
+                            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                            if (this.value.trim() && !emailRegex.test(this.value.trim())) {
+                                this.style.borderColor = '#dc3545';
+                            } else if (this.value.trim()) {
+                                this.style.borderColor = '#28a745';
+                            } else {
+                                this.style.borderColor = '#ddd';
+                            }
+                        });
+                    }
+                    
+                    // Validação para telefone
+                    if (input.type === 'tel') {
+                        input.addEventListener('input', function() {
+                            const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
+                            if (this.value.trim() && !phoneRegex.test(this.value.trim())) {
+                                this.style.borderColor = '#dc3545';
+                            } else if (this.value.trim()) {
+                                this.style.borderColor = '#28a745';
+                            } else {
+                                this.style.borderColor = '#ddd';
+                            }
+                        });
+                    }
+                });
+            }
+            
+            setupRealTimeValidation();
+        }
+
+        // ==============================
+        // INICIALIZAÇÃO GERAL
+        // ==============================
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar sistemas
+            initializeLanguageSystem();
+            initializeMobileMenu();
+            initializeSmoothScroll();
+            initializeHeaderScroll();
+            initializeForms();
+            
+            // Configuração inicial
+            console.log('TEJ HOLDING LLC - Sistema inicializado com sucesso!');
+            console.log('Web3Forms configurado para:', WEB3FORMS_CONFIG.ENDPOINT);
+            console.log('Access Key configurada');
+        });
+    </script>
+</body>
+</html>
