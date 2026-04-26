@@ -867,35 +867,48 @@
             left: -9999px;
         }
 
-        /* PDF Section */
+        /* PDF Section - Versão Corrigida */
         .pdf-section {
             width: 100%;
             max-width: calc(100% - 40px);
-            margin: 0 auto;
+            margin: 40px auto;
             display: flex;
             flex-direction: column;
             background-color: #f0f0f0;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            height: 100vh;
+        }
+        
+        .pdf-section .pdf-container {
+            flex: 1;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            background-color: white;
+            padding: 20px;
+        }
+        
+        .pdf-section .pdf-viewer {
+            width: 100%;
+            height: 70vh;
             min-height: 500px;
-            max-height: 800px;
+            border: none;
+            display: block;
         }
         
         .pdf-section .download-container {
             background-color: white;
             padding: 20px;
             text-align: center;
-            flex-shrink: 0;
-            order: 2;
+            border-top: 1px solid #ddd;
         }
         
         .pdf-section .download-btn {
             background-color: #2c7be5;
             color: white;
             border: none;
-            padding: 14px 32px;
+            padding: 12px 32px;
             font-size: 16px;
             border-radius: 6px;
             cursor: pointer;
@@ -905,39 +918,17 @@
             justify-content: center;
             gap: 10px;
             transition: all 0.3s;
-            box-shadow: 0 3px 5px rgba(0,0,0,0.2);
         }
         
         .pdf-section .download-btn:hover {
             background-color: #1c6bd6;
             transform: translateY(-2px);
-            box-shadow: 0 5px 8px rgba(0,0,0,0.3);
-        }
-        
-        .pdf-section .pdf-container {
-            flex: 1;
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            background-color: white;
-            order: 1;
-        }
-        
-        .pdf-section .pdf-viewer {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
         }
         
         .pdf-section .fallback-message {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
             color: #666;
-            padding: 20px;
+            padding: 40px;
         }
 
         /* Responsive Styles */
@@ -1025,6 +1016,17 @@
             
             .pdf-section {
                 max-width: calc(100% - 20px);
+                margin: 20px auto;
+            }
+            
+            .pdf-section .pdf-viewer {
+                height: 50vh;
+                min-height: 350px;
+            }
+            
+            .pdf-section .download-btn {
+                padding: 10px 24px;
+                font-size: 14px;
             }
         }
 
@@ -1050,6 +1052,11 @@
                 font-size: 0.8rem;
                 min-width: 35px;
             }
+            
+            .pdf-section .pdf-viewer {
+                height: 40vh;
+                min-height: 300px;
+            }
         }
     </style>
 </head>
@@ -1069,7 +1076,7 @@
                     <li><a href="#terms" class="nav-link">Termos</a></li>
                     <li><a href="#collateral" class="nav-link">Garantia</a></li>
                     <li><a href="#process" class="nav-link">Processo</a></li>
-                    <li><a href="#contact" class="btn btn-outline nav-link">Contato</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
                 <div class="language-selector">
                     <button class="lang-btn active" data-lang="pt">PT</button>
@@ -1095,7 +1102,7 @@
                 <li><a href="#terms" class="nav-link-mobile">Termos</a></li>
                 <li><a href="#collateral" class="nav-link-mobile">Garantia</a></li>
                 <li><a href="#process" class="nav-link-mobile">Processo</a></li>
-                <li><a href="#contact" class="btn btn-outline nav-link-mobile" style="display: inline-block; width: auto;">Contato</a></li>
+                <li><a href="#contact" class="nav-link-mobile">Contato</a></li>
             </ul>
         </div>
     </header>
@@ -1107,7 +1114,7 @@
                 <div class="lang-content pt active">
                     <h1>Oferta Corporativa de <span class="text-highlight">Ouro Físico</span></h1>
                     <h2>Transações Internacionais com Garantia Jurídica</h2>
-                    <p class="mb-4">A TEJ HOLDING LLC apresenta estrutura profissional para negociação internacional de ouro físico (Gold Dore) com pureza mínima de 95%+, origem legalmente comprovada e entrega CIF Dubai/UAE.</p>
+                    <p class="mb-4">A TEJ HOLDING LLC apresenta estrutura profissional para negociação internacional de ouro físico (Gold Dore) com pureza mínima de 95%+, origem legalmente comprovada (com destaque para Mali, Lusaka e Serra Leoa) e entrega CIF para os Emirados Árabes (Dubai), bem como para outros países da Europa e Ásia.</p>
                     
                     <div class="hero-badges">
                         <div class="badge"><i class="fas fa-shield-alt"></i><span>Estrutura Jurídica Segura</span></div>
@@ -1119,7 +1126,7 @@
                 <div class="lang-content en">
                     <h1>Corporate <span class="text-highlight">Physical Gold</span> Offer</h1>
                     <h2>International Transactions with Legal Guarantee</h2>
-                    <p class="mb-4">TEJ HOLDING LLC presents a professional structure for international trading of physical gold (Gold Dore) with minimum 95%+ purity, legally proven origin and CIF Dubai/UAE delivery.</p>
+                    <p class="mb-4">TEJ HOLDING LLC presents a professional structure for international trading of physical gold (Gold Dore) with minimum 95%+ purity, legally proven origin (with emphasis on Mali, Lusaka and Sierra Leone) and CIF delivery to the United Arab Emirates (Dubai), as well as to other countries in Europe and Asia.</p>
                     
                     <div class="hero-badges">
                         <div class="badge"><i class="fas fa-shield-alt"></i><span>Secure Legal Structure</span></div>
@@ -1498,31 +1505,57 @@
         </div>
     </section>
 
-    <!-- PDF Section -->
-    <section class="pdf-section">
-        <div class="pdf-container">
-            <div class="text-center mb-4">
-                <div class="lang-content pt active"><h2>Oferta Corporativa C.I.F FULL</h2></div>
-                <div class="lang-content en"><h2>Corporate C.I.F FULL Offer</h2></div>
+<!-- PDF Section 1 -->
+<section class="pdf-section">
+    <div class="pdf-container">
+        <div class="text-center mb-4">
+            <div class="lang-content pt active"><h2>Oferta Corporativa C.I.F FULL</h2></div>
+            <div class="lang-content en"><h2>Corporate C.I.F FULL Offer</h2></div>
+        </div>
+        <iframe src="./TEJ.SPA.pdf#view=FitH" class="pdf-viewer" title="Visualizador de PDF" type="application/pdf">
+            <div class="fallback-message">
+                <p>Seu navegador não suporta a visualização de PDFs.</p>
+                <p>Clique no botão abaixo para baixar o arquivo.</p>
             </div>
-            <iframe src="./TEJ.SPA.pdf#view=FitH" class="pdf-viewer" title="Visualizador de PDF" type="application/pdf">
-                <div class="fallback-message">
-                    <p>Seu navegador não suporta a visualização de PDFs.</p>
-                    <p>Clique no botão abaixo para baixar o arquivo.</p>
-                </div>
-            </iframe>
+        </iframe>
+    </div>
+    <div class="download-container">
+        <a href="./TEJ.SPA.pdf" class="download-btn" download>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Baixar PDF
+        </a>
+    </div>
+</section>
+
+<!-- PDF Section 2 -->
+<section class="pdf-section">
+    <div class="pdf-container">
+        <div class="text-center mb-4">
+            <div class="lang-content pt active"><h2>Oferta CIF com Transporte Internacional</h2></div>
+            <div class="lang-content en"><h2>CIF Offer with International Transportation</h2></div>
         </div>
-        <div class="download-container">
-            <a href="./TEJ.SPA.pdf" class="download-btn" download>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                Baixar PDF
-            </a>
-        </div>
-    </section>
+        <iframe src="./Gold.TEJ.pdf#view=FitH" class="pdf-viewer" title="Visualizador de PDF" type="application/pdf">
+            <div class="fallback-message">
+                <p>Seu navegador não suporta a visualização de PDFs.</p>
+                <p>Clique no botão abaixo para baixar o arquivo.</p>
+            </div>
+        </iframe>
+    </div>
+    <div class="download-container">
+        <a href="./Gold.TEJ.pdf" class="download-btn" download>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Baixar PDF
+        </a>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
